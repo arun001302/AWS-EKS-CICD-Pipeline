@@ -628,6 +628,6 @@ This project is licensed under the MIT License.
 
 ---
 
-**Built with ❤️ using modern DevOps practices**
+
 
 *Last Updated: October 2025*
