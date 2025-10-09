@@ -244,22 +244,29 @@ docker run -d \
 
 #### 1. Repository Structure
 
+This project uses the complete repository structure:
+
 ```
-Jenkins-Zero-To-Hero/
-├── java-maven-sonar-argocd-helm-k8s/
-│   ├── spring-boot-app/
-│   │   ├── src/
-│   │   │   └── main/
-│   │   │       └── java/
-│   │   │           └── com/abhishek/
-│   │   │               └── SpringBootApp.java
-│   │   ├── pom.xml
-│   │   ├── Dockerfile
-│   │   └── JenkinsFile
-│   └── spring-boot-app-manifests/
-│       ├── deployment.yml
-│       └── service.yml
+AWS-EKS-CICD-Pipeline/
+├── README.md
+└── java-maven-sonar-argocd-helm-k8s/
+    ├── spring-boot-app/
+    │   ├── src/
+    │   │   └── main/
+    │   │       ├── java/
+    │   │       │   └── com/abhishek/
+    │   │       │       └── SpringBootApp.java
+    │   │       └── resources/
+    │   │           └── application.properties
+    │   ├── pom.xml
+    │   ├── Dockerfile
+    │   └── JenkinsFile
+    └── spring-boot-app-manifests/
+        ├── deployment.yml
+        └── service.yml
 ```
+
+**Repository URL:** `https://github.com/arun001302/AWS-EKS-CICD-Pipeline.git`
 
 #### 2. Jenkinsfile Pipeline
 
@@ -319,7 +326,7 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 - Name: spring-boot-app
 - Project: default
 - Sync Policy: Automatic (with prune and self-heal)
-- Repository: https://github.com/arun001302/Jenkins-Zero-To-Hero.git
+- Repository: https://github.com/arun001302/AWS-EKS-CICD-Pipeline.git
 - Path: java-maven-sonar-argocd-helm-k8s/spring-boot-app-manifests
 - Destination: https://kubernetes.default.svc (default namespace)
 ```
