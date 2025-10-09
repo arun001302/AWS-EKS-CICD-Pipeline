@@ -122,13 +122,7 @@ URI: 914261932225.dkr.ecr.us-east-1.amazonaws.com/ci-cd-repository
 
 ### Phase 2: Jenkins Installation & Configuration
 
-#### 1. Jenkins Server Setup
 
-Launched EC2 instance for Jenkins:
-- Instance Type: t3.medium
-- OS: Ubuntu 22.04 LTS
-- Storage: 30 GB
-- Security Group: Ports 22, 8080, 9000 open
 
 #### 2. Installation Commands
 
@@ -628,6 +622,6 @@ This project is licensed under the MIT License.
 
 ---
 
-
+**Built with ❤️ using modern DevOps practices**
 
 *Last Updated: October 2025*
