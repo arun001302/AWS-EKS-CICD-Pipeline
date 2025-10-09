@@ -117,7 +117,7 @@ kubernetes.io/cluster/jenkins-cicd-cluster = shared
 Created private ECR repository:
 ```bash
 Repository: ci-cd-repository
-URI: 914261932225.dkr.ecr.us-east-1.amazonaws.com/ci-cd-repository
+URI: 914261932200.dkr.ecr.us-east-1.amazonaws.com/ci-cd-repository
 ```
 
 ### Phase 2: Jenkins Installation & Configuration
@@ -281,7 +281,7 @@ The pipeline consists of 6 stages:
 
 Key environment variables:
 ```groovy
-AWS_ACCOUNT_ID = '914261932225'
+AWS_ACCOUNT_ID = '914261932200'
 AWS_REGION = 'us-east-1'
 ECR_REPO_NAME = 'ci-cd-repository'
 IMAGE_TAG = "${BUILD_NUMBER}"
@@ -611,14 +611,6 @@ This project demonstrates a complete, production-ready CI/CD pipeline following 
 
 The architecture is scalable, maintainable, and follows industry best practices for building reliable software delivery pipelines in cloud environments.
 
-## 🤝 Contributing
-
-Feel free to fork this repository and submit pull requests for any improvements!
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
 ## 🙏 Acknowledgments
 
 - Jenkins community for excellent CI/CD tooling
@@ -628,7 +620,4 @@ This project is licensed under the MIT License.
 - Kubernetes community for container orchestration
 
 ---
-
-**Built with ❤️ using modern DevOps practices**
-
 *Last Updated: October 2025*
